@@ -23,7 +23,7 @@ Test run
     ["SFO","EWR"]
 ```
 ## API document 
-APIs are documented in open API spec 3.0.0
+APIs are documented in OpenAPI spec 3.0.0
 
 after running server, access below url in browser
 ```
