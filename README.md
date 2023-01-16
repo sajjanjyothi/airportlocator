@@ -50,6 +50,6 @@ uber zap package used for logging
 - https://github.com/uber-go/zap
 
 ## ToDo
-- more error hadling in endpoint
+- more error handling in endpoint
 - Authentication addition to endpoint
 - Helm chart not tested
