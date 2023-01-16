@@ -1,0 +1,40 @@
+openapi: "3.0.3"
+info:
+  version: 1.0.0
+  title: volume
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+security:
+- BasicAuth: []
+paths:
+  /calculate:
+    get:
+      tags: ["airportcalculator"]
+      operationId: getSourceDestinationAirports
+      summary: "Get source and desctination airports from itinerary"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+      responses:
+          '200':
+            description: |-
+              200 response
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    type: object
+          '4XX':
+            description: |-
+              4XX response
+          '5XX':
+            description: |-
+              4XX response
