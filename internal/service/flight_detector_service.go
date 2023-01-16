@@ -15,6 +15,7 @@ type flightService struct {
 	flightPathDetector flightpath.FlightPath
 }
 
+// NewService new service intance creator
 func NewService(filghtPathDetector flightpath.FlightPath) api.ServerInterface {
 	return &flightService{
 		flightPathDetector: filghtPathDetector,
